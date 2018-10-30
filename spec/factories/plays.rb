@@ -1,10 +1,7 @@
 FactoryBot.define do
   factory :play do
-    word "hello"
+    word {"hello"}
     game
     user
   end
 end
-
-
-

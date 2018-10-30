@@ -1,0 +1,90 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/autumnmartin/turing/3module/final/scrabble_web_api/app/models/play.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        6,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        6,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/autumnmartin/turing/3module/final/scrabble_web_api/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/autumnmartin/turing/3module/final/scrabble_web_api/app/models/game.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/Users/autumnmartin/turing/3module/final/scrabble_web_api/app/models/user.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/autumnmartin/turing/3module/final/scrabble_web_api/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/autumnmartin/turing/3module/final/scrabble_web_api/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/Users/autumnmartin/turing/3module/final/scrabble_web_api/app/controllers/application_controller.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/autumnmartin/turing/3module/final/scrabble_web_api/app/controllers/welcome_controller.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/autumnmartin/turing/3module/final/scrabble_web_api/app/helpers/application_helper.rb": [
+        0,
+        0
+      ],
+      "/Users/autumnmartin/turing/3module/final/scrabble_web_api/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/autumnmartin/turing/3module/final/scrabble_web_api/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1540875509
+  }
+}
