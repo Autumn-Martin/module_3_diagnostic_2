@@ -1,4 +1,5 @@
 class Play < ApplicationRecord
+  attr_reader :score
   belongs_to :user
   belongs_to :game
 
@@ -15,5 +16,11 @@ class Play < ApplicationRecord
   private
 
     def score_word
+      @score = 0
+      word_letter_array = word.upcase.chars
+      word_letter_array.each do |letter|
+        @score += letter_scores[letter]
+      end
+      @score
     end
 end
