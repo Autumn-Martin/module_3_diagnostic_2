@@ -27,7 +27,7 @@ describe 'Games API' do
 
     game_score_info = JSON.parse(response.body, symbolize_names: true)
 
-    expected_info = { "game_id":1,
+    expected_info = { "game_id": game.id,
                        "scores": [{ "user_id":1,
                                     "score":15
                                   },
