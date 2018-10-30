@@ -1,1 +1,6 @@
-Examples for using 'mindfulness'
+Examples for using '<%= @word_search.word %>'
+<%= @word_search.sentances.each do |sentance| %>
+<ul class="sentance">
+  <li class="example"><%= sentance.example %></li>
+</ul>
+<% end %>
