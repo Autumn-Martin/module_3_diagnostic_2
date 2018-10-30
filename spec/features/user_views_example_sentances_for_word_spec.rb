@@ -16,8 +16,8 @@ feature 'Guest user submitting a word' do
   scenario 'displays a list of example sentances for that word' do
     word_id = "mindfulness"
     visit "/"
-    fill_in :word, with: "mindfulness"
-    click_on "Submit"
+    fill_in :q, with: "mindfulness"
+    click_on "Search"
     expect(page).to have_content("Examples for using 'mindfulness'")
     expect(current_url).to include("/entries/en/#{word_id}/sentences")
     expect(page).to have_css(".sentance")
