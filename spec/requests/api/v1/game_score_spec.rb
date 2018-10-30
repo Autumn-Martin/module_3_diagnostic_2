@@ -22,16 +22,23 @@ require 'rails_helper'
 
 describe 'Games API' do
   it 'sends the game score' do
-    game = create(:game)
+    josh = create(:user, id: 1)
+    sal = create(:user, id: 2)
+    game = create(:game, player_1_id: 1, player_2_id: 2)
+    josh.plays.create(game: game, word: "sal", score: 3)
+    josh.plays.create(game: game, word: "zoo", score: 12)
+    sal.plays.create(game: game, word: "josh", score: 14)
+    sal.plays.create(game: game, word: "no", score: 2)
+
     get "/api/v1/games/#{game.id}"
 
     game_score_info = JSON.parse(response.body, symbolize_names: true)
 
     expected_info = { "game_id": game.id,
-                       "scores": [{ "user_id":1,
+                       "scores": [{ "user_id": 1,
                                     "score":15
                                   },
-                                  {  "user_id":2,
+                                  {  "user_id": 2,
                                      "score":16
                                    }]
                     }
