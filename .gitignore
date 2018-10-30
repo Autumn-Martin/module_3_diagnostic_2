@@ -23,4 +23,4 @@
 
 # Ignore SimpleCov files
 /coverage.data
-/coverage/
+/coverage/* 
