@@ -1,4 +1,5 @@
 class SearchController < ApplicationController
   def index
-  end 
+    @word_search = WordSearchFacade.new(params[:q])
+  end
 end
