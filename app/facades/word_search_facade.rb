@@ -5,7 +5,7 @@ class WordSearchFacade
   end
 
   def sentances
-    @sentances = SentanceSearch.new(@word).examples.map do |example|
+    @sentances ||= SentanceSearch.new(@word).examples.map do |example|
       Sentance.new(example[:text])
     end
   end
